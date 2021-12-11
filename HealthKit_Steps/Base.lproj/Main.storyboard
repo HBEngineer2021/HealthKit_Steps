@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HealthKit_Steps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AoM-wK-Uvy">
+                                <rect key="frame" x="87" y="110" width="240" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-28-MDl">
+                                        <rect key="frame" x="48.5" y="32" width="143" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本日の合計歩数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkV-E4-3ib">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0歩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-6V-u13">
+                                                <rect key="frame" x="0.0" y="32" width="143" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0w9-uA-Qyh"/>
+                                    <constraint firstItem="Vjp-28-MDl" firstAttribute="centerX" secondItem="AoM-wK-Uvy" secondAttribute="centerX" id="16C-3l-qLG"/>
+                                    <constraint firstItem="Vjp-28-MDl" firstAttribute="centerY" secondItem="AoM-wK-Uvy" secondAttribute="centerY" id="ChL-MJ-x8n"/>
+                                    <constraint firstAttribute="height" constant="120" id="jTz-cw-sYc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugZ-so-1xh">
+                                <rect key="frame" x="87" y="250" width="240" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="clr-Rt-TOK">
+                                        <rect key="frame" x="48.5" y="32" width="143" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本日の合計距離" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnd-LP-bM7">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIG-zg-Uto">
+                                                <rect key="frame" x="0.0" y="32" width="143" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="4yM-uR-2QP"/>
+                                    <constraint firstItem="clr-Rt-TOK" firstAttribute="centerX" secondItem="ugZ-so-1xh" secondAttribute="centerX" id="IaW-hW-B11"/>
+                                    <constraint firstItem="clr-Rt-TOK" firstAttribute="centerY" secondItem="ugZ-so-1xh" secondAttribute="centerY" id="fxl-uy-6oy"/>
+                                    <constraint firstAttribute="width" constant="240" id="yoG-DA-Wxb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ugZ-so-1xh" firstAttribute="top" secondItem="AoM-wK-Uvy" secondAttribute="bottom" constant="20" id="K66-xq-T6H"/>
+                            <constraint firstItem="ugZ-so-1xh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q06-Pd-5Ak"/>
+                            <constraint firstItem="AoM-wK-Uvy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="e0a-na-CPQ"/>
+                            <constraint firstItem="AoM-wK-Uvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ojZ-pu-2SA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="distanceLbl" destination="UIG-zg-Uto" id="hNy-vG-hCS"/>
+                        <outlet property="distanceView" destination="ugZ-so-1xh" id="EYi-da-xI1"/>
+                        <outlet property="stepLbl" destination="9GX-6V-u13" id="nsw-49-BCU"/>
+                        <outlet property="stepView" destination="AoM-wK-Uvy" id="Aww-ea-MI1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
